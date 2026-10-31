@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "npm run test:vercel-ignore",
+    "test:vercel-ignore": "node --test scripts/vercel-ignore-build.test.mjs scripts/vercel-ignore-command.test.mjs"
   },
   "dependencies": {
     "next": "16.2.3",
